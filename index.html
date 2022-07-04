@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DocGen2</title>
+    <title>W&M CS Symposium</title>
 
     <!-- favicon -->
     <link href="favicon.png" rel=icon>
@@ -54,12 +54,12 @@
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden"><a href="#page-top"></a></li>
-                        <li><a class="page-scroll" href="#section-challenge">Challenge</a></li>
-                        <li><a class="page-scroll" href="#section-tooldemo">Tool Demo</a></li>
+                        <!--<li><a class="page-scroll" href="#section-challenge">Challenge</a></li>
                         <li><a class="page-scroll" href="#section-exhibition">Exhibition</a></li>
-                        <li><a class="page-scroll" href="#section-submission">Submission</a></li>
+                        <li><a class="page-scroll" href="#section-submission">Submission</a></li>-->
                         <li><a class="page-scroll" href="#section-program">Program</a></li>
-                        <li><a class="page-scroll" href="#section-dates">Dates</a></li>
+                        <li><a class="page-scroll" href="#section-travel-grants">Travel Grants</a></li>
+                        <!--<li><a class="page-scroll" href="#section-dates">Dates</a></li>-->
                         <li><a class="page-scroll" href="#section-organization">Organization</a></li>
                         <li><a class="page-scroll" href="#section-venue">Venue</a></li>
                     </ul>
@@ -75,9 +75,9 @@
 
     <div id="cover" class="jumbotron text-center">
         <div class="content">
-            <div class="event-date">September 29th 2020, Adelaide, Australia <b>(to be held virtual)</b></div>
-            <h1>Second Software Documentation Generation Challenge (DocGen2)</h1>
-            <p class="lead">Hosted by the <a href="https://icsme2020.github.io/" style="color:rgba(255, 255, 255, .9);font-weight:bold;"  target="_blank">IEEE International Conference on Software Maintenance and Evolution (ICSME 2020)</a></p>
+            <div class="event-date">October 22nd 2022, Williamsburg, Virginia</div>
+            <h1>William & Mary Computer Science Symposium</h1>
+            <!--<p class="lead">Hosted by the <a href="https://icsme2020.github.io/" style="color:rgba(255, 255, 255, .9);font-weight:bold;"  target="_blank">IEEE International Conference on Software Maintenance and Evolution (ICSME 2020)</a></p>-->
              <!-- <button type="button" class="btn btn-default btn-lg">STAY IN THE LOOP</button>-->
         </div>
     </div>
@@ -91,7 +91,8 @@
                     <div class="section-title">
                         <h1>About</h1>
                     </div>
-					 <p class="lead">
+                    <!--
+           <p class="lead">
                         <b>Latest News:
 						<ul class="reg_list">
 						  <li>(Oct 20th) The  <a href="https://www.youtube.com/watch?v=t04uboZ9Lks" target="_blank">video</a> and <a href="https://speakerdeck.com/koppor/markdown-architecturaldecisionrecords-capturing-decisions-where-the-developer-is-working" target="_blank">slides</a> of the keynote talk are now available.</li>
@@ -102,11 +103,11 @@
 						  <li>The workshop will go virtual due to COVID-19</li>
 						  <li>The important dates have been updated</li>
 						</ul> </b>
-                    </p>
+                    </p>-->
                     <p class="lead">
-                        For the second time, the International Conference on Software Maintenance and Evolution (ICSME) is going to host the Software Documentation Generation Challenge (DocGen). This time, DocGen is organized in three different tracks. One will be a competition, with prize winners selected according to a suite of objective metrics (DeClutter); one will be a tool demo similar to the challenge in <a href="../dysdoc3/index.html" target="_blank">2018</a> (ClassDoc); and finally, we invite open tool demos on any documentation-related topic (Open Exhibition).
+                      ---  Placeholder ---
                     </p>
-					
+
                     <!-- <p class="lead"><a href="files/docgen2_cfp.pdf"  target="_blank">Call for submissions (PDF)</a>-->
 					</p>
                    </div>
@@ -120,13 +121,13 @@
                 </div>
 				-->
             </div>
-			
+
         </div>
     </section>
     <!-- .about-event -->
-	
 
 
+<!--
     <section id="section-challenge" class="section-wrapper gray-bg">
         <div class="container">
             <div class="row">
@@ -137,37 +138,35 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">		
+                <div class="col-md-12">
                     <p class="lead">The goal of the DeClutter challenge is to build an automated tool that can identify unnecessary software documentation at the class or file level. For example, a comment saying <code>//loop from 1 to N</code> just before code implementing exactly that is not helpful, and worse, could drift when the underlying code is changed to <code>(N-1)</code> (for example).
                     </p>
                     <p class="lead">As such, it is considered as non-informative and labeled as "Non-information = Yes". The tool should take in a CSV file in the <a href="declutter-format.html" target="_blank">described format</a>, and output a label for each row as either "Non-information = Yes" for clutter, non-informative comments and "Non-information = No" for non-clutter ones.</p>
-                    <p class="lead">To download the guidelines and dataset please refer to the <a href="https://github.com/dysdoc/declutter" target="_blank">declutter repository</a>. Participants (either teams or individuals) will initially have access to the development data only. 
-			  Later, the unlabelled test data will be released (see the timeline below). 
+                    <p class="lead">To download the guidelines and dataset please refer to the <a href="https://github.com/dysdoc/declutter" target="_blank">declutter repository</a>. Participants (either teams or individuals) will initially have access to the development data only.
+			  Later, the unlabelled test data will be released (see the timeline below).
 			  After the assessment, the labels for the test data will be released as well. Both development and test data will be extracted from the <a href="http://www.jabref.org/" target="_blank">JabRef project</a>. However, participants might use additional labeled data from other sources in order to develop and implement their systems. Guidelines describing the annotation and providing detailed instructions for participants will be released with the development data.
                     </p>
-					
+
                     <p class="lead">After submitting the predictions for the test data, participants will be required to provide a short report including a brief description of their approach, an illustration of their experiments, in particular techniques and resources used (included additional data used for building the model, if any), and an analysis of their results. Formatting guidelines will be released with the test data.</p>
-					
+
 
                     <p class="lead">We invite potential participants to register using the <a href="https://forms.gle/jkGKF44Roc51L6ZT6" target="_blank">webform</a>. Registration is compulsory to participate in the challenge, although it is not binding. In any case, independently of your registration, you can decide to withdraw from participating by not sending the system results during the evaluation stage. When registering, you will also have the option to subscribe to the Google group we will create to keep participants up to date with the latest news related to the challenge. Participants are encouraged to share comments and questions with the mailing list. The challenge co-chairs will assist you for any potential issues that could be raised.
                     </p>
-					
+
                     <p class="lead">
 					Tentative timeline for the DeClutter Challenge (report submission deadline below):
 					</p>
-					
+
 					<ul class="reg_list">
 					  <li>30th September 2019: Development data available to participants</li>
 					  <li>20th May 2020: test data available</li>
 					  <li>28th July 2020: Kaggle competition closes</li>
-					  <!--<li>8th June 2020: Assessment returned to participants</li>-->
 					</ul>
                 </div>
             </div>
-			
+
         </div>
     </section>
-
 
     <section id="section-tooldemo" class="section-wrapper about-event">
         <div class="container">
@@ -182,7 +181,7 @@
                 <div class="col-md-12">
                     <p class="lead">The ClassDoc Tool Demo is the successor of the DocGen competition held in <a href="../dysdoc3/index.html" target="_blank">2018</a>. The goal is to build an automated system that can create <a href="https://www.cs.mcgill.ca/~martin/blog/2017-11-06.html" target="_blank">on-demand developer documentation</a> for a Java class. The documentation should help developers in answering specific questions about the class, for example:
                     </p>
-					
+
 					<ul class="reg_list">
 					  <li>What does the class do?</li>
 					  <li>What is the purpose of the class?</li>
@@ -193,7 +192,7 @@
                     </p>
                     <p class="lead">Possible data sources for generating the documentation include, but are not limited to:
                     </p>
-					
+
 					<ul class="reg_list">
 					  <li><a href="https://github.com/JabRef/" target="_blank">Source code and existing comments</a></li>
 					  <li><a href="https://github.com/JabRef/" target="_blank">Version control data</a></li>
@@ -203,11 +202,11 @@
 					  <li><a href="https://github.com/JabRef/jabref/tree/master/src/test/java/org/jabref" target="_blank">Related test cases</a></li>
 					  <li><a href="https://stackoverflow.com/search?q=jabref" target="_blank">Stack Overflow threads</a></li>
 					</ul>
-					
-					<!-- TODO: change the EasyChair link-->
+
+
                     <p class="lead">Participants are required to submit a two-page description of the key idea(s) behind their document generator. The description must contain the following information:
                     </p>
-					
+
 					<ul class="reg_list">
 					  <li>Authors</li>
 					  <li>Data sources used</li>
@@ -215,15 +214,15 @@
 					  <li>Preliminary results, including a link to an HTML file with the generated reference documentation for class <a href="https://github.com/JabRef/jabref/blob/master/src/main/java/org/jabref/model/entry/BibEntry.java" target="_blank">org.jabref.model.entry.BibEntry</a> as of release <a href="https://github.com/JabRef/jabref/commit/8a8d259c4567521bec3f3283be5ca0ac246a6aef" target="_blank">v5.0-alpha</a></li>
 					  <li>A DOI citation that points to a preserved archive containing the source code of the document generator together with instructions describing how to reproduce the documentation generation. <a href="https://guides.github.com/activities/citable-code/" target="_blank">Zenodo</a> and <a href="https://knowledge.figshare.com/articles/item/how-to-connect-figshare-with-your-github-account-1" target="_blank">Figshare</a> accounts can be easily linked with GitHub repositories to automatically archive releases and make them citable.</li>
 					</ul>
-					
-						
+
+
                 </div>
-				
+
             </div>
         </div>
-		
+
     </section>
-	
+
 
     <section id="section-exhibition" class="section-wrapper gray-bg">
         <div class="container">
@@ -242,8 +241,8 @@
             </div>
         </div>
     </section>
-	
-	
+
+
     <section id="section-submission" class="section-wrapper about-event">
         <div class="container">
             <div class="row">
@@ -256,29 +255,30 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="lead">Teams can enter DocGen in one of three categories:
-                    </p>	
-					
+                    </p>
+
 					<ul class="reg_list">
 					  <li>The challenge category will only accept entries that address the specific DocGen2 challenge (DeClutter). Two-page summaries of the accepted competition entries will be published in the ICSME proceedings.</li>
 					  <li>The ClassDoc tool demo will only accept entries that address classes in the <a href="https://github.com/JabRef/jabref" target="_blank">JabRef project</a>, as outlined above. Two-page descriptions of the accepted tools will be published in the ICSME proceedings.</li>
 					  <li>The open exhibition will accept any demonstration of documentation generation technology, for any programming language, technology, or types of documents. Two-page descriptions of the accepted open exhibition submissions will be published online.</li>
 					</ul>
-					
+
                     <p class="lead">All submissions must be formatted according to the <a  target="_blank"href="https://icsme2020.github.io/cfp/ResearchTrackCFP.html">ICSME Formatting Instructions</a> and must be submitted through <a  target="_blank"href="https://easychair.org/my/conference?conf=icsme2020">EasyChair</a>. No double-blind submissions are required. Each submission will be evaluated by the program committee.
                     </p>
-					
-					
+
+
                     <h2>Presentation</h2>
 
 					<p class="lead">Accepted submissions of all three tracks will be invited to present at the workshop.
-                    </p>	
+                    </p>
                     <p class="lead">The best DeClutter tool(s), evaluated using commonly accepted machine learning scoring as outlined above, will be awarded the DocGen Award 2020. The ClassDoc submissions will be ranked by JabRef developers, the best tool(s) will also receive an award.
-                    </p>						
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-	
+-->
+
 	<section id="section-program" class="section-wrapper section-ajenda">
         <div class="container">
             <div class="row">
@@ -292,10 +292,10 @@
  <div class="row">
                 <div class="col-md-12">
                     <p class="lead">September 29th, 2020
-                    </p>					
+                    </p>
                 </div>
             </div>
-			
+
             <div class="row">
                 <div class="col-md-4">
                     <!-- .session -->
@@ -308,22 +308,22 @@
                         <h4><a href="https://www.youtube.com/watch?v=t04uboZ9Lks" target="_blank">[Video]</a> <a href="https://speakerdeck.com/koppor/markdown-architecturaldecisionrecords-capturing-decisions-where-the-developer-is-working" target="_blank">[Slides]</a></h4>
 						<h4>More information below.</h4>
                      </div>
-					
+
 
                     <!-- .session -->
                     <div class="session">
                         <h2>Break</h2>
                     </div>
-					
+
 
 
                 </div>
                 <div class="col-md-4">
-                   
+
 				<div class="session">
                         <time>CEST 8:00 - 9:20 AM /</br> Adelaide 3:30 - 4:50 PM</time>
                         <h2>Session 2: Paper presentations</h2>
-						
+
                         <h3>Agenda:</h3>
                         <h4>- Mingwei Liu, Xin Peng, Xiujie Meng, Huanjun Xu, Shuangshuang Xing, Xin Wang, Yang Liu and Gang Lv, <b>Source Code based On-demand Class Documentation Generation</b> (tool demo)</h4>
                         <h4>- Challenge recap</h4>
@@ -331,20 +331,20 @@
                         <h4>- Mingwei Liu, Yanjun Yang, Xin Peng, Chong Wang, Chengyuan Zhao, Xin Wang and Shuangshuang Xing, <b>Learning based and Context Aware Non-Informative Comment Detection</b> (challenge)</h4>
 </h4>
                     </div>
-					
+
                     <!-- .session -->
                     <div class="session">
                         <h2>Break</h2>
                     </div>
                     <!-- .session -->
-					
 
 
 
-					
+
+
                 </div>
-                <div class="col-md-4">					
-                   
+                <div class="col-md-4">
+
 					<div class="session">
                         <time>CEST 9:30 - 10:00 AM /</br> Adelaide 5:00 - 5:30 PM </time>
                         <h2>Session 3: Outlook and Closing</h2>
@@ -352,49 +352,51 @@
                     <!-- .session -->
 
                 </div>
-				
-				
 
-				<div class="row">
+
+
+				<!--<div class="row">
                 <div class="col-md-12">
-				
-                    <h2>Keynote</h2>		
+
+                    <h2>Keynote</h2>
                     <p class="lead">
 					<a href="https://www.youtube.com/watch?v=t04uboZ9Lks" target="_blank">[Video]</a> <a href="https://speakerdeck.com/koppor/markdown-architecturaldecisionrecords-capturing-decisions-where-the-developer-is-working" target="_blank">[Slides]</a>
-                    </p>	
+                    </p>
                     <p class="lead"><b>Markdown Architectural Decision Records: Capturing Decisions Where the Developer is Working</br>
-                    </p>	
+                    </p>
                     <p class="lead">An Architectural Decision (AD) is a software design choice that addresses a functional or non-functional requirement that is architecturally significant. This might, for instance, be a technology choice (e.g., Java vs. JavaScript), a choice of the IDE (e.g., IntelliJ vs. Eclipse IDE), a choice between a library (e.g., SLF4J vs java.util.logging), or a decision on features (e.g., infinite undo vs. limited undo). It should be as easy as possible to a) write down the decisions and b) to version the decisions. “Markdown and Architectural Decision Records” are one way to fulfill these requirements. This talk will outline MADR, present its current use and outline next research and development steps.
-                    </p>				
+                    </p>
                     <p class="lead"><b>Dr. Oliver Kopp</b> studied Software Engineering at the University of Stuttgart. Wanting to learn and research more about business processes and software architectures, he did his PhD and was a post doc at the University of Stuttgart resulting in more than 100 publications and multiple open source projects such as the Cloud application modeling tool Eclipse Winery or the literature management software JabRef. Since mid-2018, he works for the Mercedes-Benz AG in the field of software research.
-                    </p>				
+                    </p>
                 </div>
+            </div>-->
             </div>
-            </div>
-	
-    <section id="section-dates" class="section-wrapper gray-bg">
+</section>
+    <section id="section-travel-grants" class="section-wrapper gray-bg">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>Important Dates</h1>
+                        <h1>Travel Grants</h1>
                     </div>
                 </div>
             </div>
+            <p class="lead">
+                Placeholder --- Travel Grant Info.
+            </p>
             <div class="row">
                 <div class="col-md-12">
+                  <h2>Important Dates</h2>
 					<ul class="reg_list">
-					  <li>14th August 2020: Submission deadline for all three tracks</li>
-					  <li>28th August 2020: Notification deadline</li>
-					  <li>4th September 2020: Camera-ready deadline</li>
-					  <li>29th September 2020: (Virtual) Workshop co-located with <a href="https://icsme2020.github.io/" target="_blank">ICSME 2020</a></li>
+					  <li>14th September 2022: Deadline to submit travel grants</li>
+					  <li>28th September 2022: Notification</li>
 					</ul>
                 </div>
             </div>
         </div>
     </section>
-	
-			
+
+
 	<section id="section-organization" class="section-wrapper team  about-event">
         <div class="container">
             <div class="row">
@@ -404,8 +406,8 @@
                     </div>
                 </div>
             </div>
-			
-			<p class="lead"><h2>General and Tool Demo Chairs</h2></p>
+            <!--
+			      <p class="lead"><h2>General and Tool Demo Chairs</h2></p>
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
@@ -418,7 +420,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
+
 
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
@@ -430,12 +432,12 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
+
             </div>
-			
+
 			<p class="lead"><h2>Challenge Chairs</h2></p>
 
-			
+
 			<div class="row">
 
                 <div class="col-sm-6 col-md-3">
@@ -448,8 +450,8 @@
                         </figcaption>
                     </figure>
                 </div>
-				
-                <!-- /.col-sm-6 -->
+
+
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
                         <a href="http://www.neilernst.net/" target="_blank"><img src="img/people/neil.jpg" class="img-responsive" alt="Image"></a>
@@ -460,15 +462,15 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
 
-				
+
+
             </div>
-			
-			
+
+
 			<p class="lead"><h2>Exhibition Chairs</h2></p>
-			
-				<!-- .row -->
+
+
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
@@ -480,7 +482,7 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
+
 
 
                 <div class="col-sm-6 col-md-3">
@@ -493,15 +495,15 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
-				
-				
+
+
+
             </div>
-			
-			
+
+
 			<p class="lead"><h2>Steering Committee</h2></p>
-				
-				<!-- .row -->
+
+
             <div class="row">
 
                 <div class="col-sm-6 col-md-3">
@@ -514,44 +516,44 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
-			
+
+
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
                         <a href="http://www.sa.cs.titech.ac.jp/~tkobaya/index.html.en" target="_blank"><img src="img/people/takashi.jpg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
-                            <h3>Takashi Kobayashi 
+                            <h3>Takashi Kobayashi
                                 <small class="affil">Tokyo Institute of Technology, Japan</small>
                             </h3>
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
+
             </div>
-				
-			
-			
-			
-			
+
+
+
+
+
 			<p class="lead"><h2>Publicity Chairs</h2></p>
-			
-				<!-- .row -->
+
+
             <div class="row">
-            
+
 
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
                         <a href="https://ojcchar.github.io/" target="_blank"><img src="img/people/oscar.jpeg" class="img-responsive" alt="Image"></a>
                         <figcaption class="caption text-center">
-                            <h3>Oscar Chaparro 
+                            <h3>Oscar Chaparro
                                 <small class="affil">College of William and Mary, USA</small>
                             </h3>
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
 
-				
+
+
                 <div class="col-sm-6 col-md-3">
                     <figure class="thumbnail">
                         <a href="https://davidshepherd.weebly.com/" target="_blank"><img src="img/people/david.jpg" class="img-responsive" alt="Image"></a>
@@ -562,17 +564,17 @@
                         </figcaption>
                     </figure>
                 </div>
-                <!-- /.col-sm-6 -->
-				
-								
-				
-            </div>
-			
-			 <div class="row">
+
+
+
+
+            </div>-->
+          <!--Before committee-->
+			 <!--<div class="row">
                 <div class="col-md-12">
-                    <p class="lead"><h2>Program committee</h2></p>
+                    <p class="lead"><h2>Organizing committee</h2></p>
 					<ul class="reg_list">
-						<li><a href="https://www.utdallas.edu/~amarcus/" target="_blank">Andrian Marcus</a> (The University of Texas at Dallas, USA)</li>
+						<li><a href="https://www.adwaitnadkarni.com" target="_blank">Adwait Nadkarni</a> (The University of Texas at Dallas, USA)</li>
 						<li><a href="http://ctreude.ca/" target="_blank">Christoph Treude</a> (The University of Adelaide, Australia)</li>
 						<li><a href="http://www.cs.wm.edu/~denys/" target="_blank">Denys Poshyvanyk</a> (College of William and Mary, USA)</li>
 						<li><a href="https://www.researchgate.net/profile/Hideto_Ogawa" target="_blank">Hideto Ogawa</a> (Hitachi Ltd, Japan)</li>
@@ -590,8 +592,8 @@
 						<li><a href="https://www.hlt.utdallas.edu/~vince/" target="_blank">Vincent Ng</a> (The University of Texas at Dallas, USA)</li>
 					</ul>
                 </div>
-            </div>
-			            
+            </div>-->
+
         </div>
         <!-- /.container -->
     </section>
@@ -604,8 +606,8 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1>Venue</h1>
-                        <p class="lead">DocGen2 will take place in Adelaide, Australia. More details will come soon.</p>
-												
+                        <p class="lead">The W&M CS Symposium will take place in Williamsburg, Virginia, in the Integrated Sciences Center (ISC). More details will come soon.</p>
+
                     </div>
                 </div>
             </div>
@@ -614,8 +616,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <!-- <div id="googleMap"></div> -->
-						<iframe width="100%" height="400" id="gmap_canvas" frameborder="3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d418336.0071982731!2d138.33098114197327!3d-35.00044508146459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab735c7c526b33f%3A0x4033654628ec640!2sAdelaide+SA%2C+Australia!5e0!3m2!1sen!2shk!4v1565658112363!5m2!1sen!2shk" scrolling="no" marginheight="0" marginwidth="0" style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 5px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px;  "></iframe>
-					  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3175.0784019445514!2d-76.71663048255616!3d37.2695679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b089758e63e205%3A0xfb8f3d3a185e3555!2sIntegrated%20Science%20Center!5e0!3m2!1sen!2sus!4v1656904443226!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						<!--<iframe width="100%" height="400" id="gmap_canvas" frameborder="3" src="" scrolling="no" marginheight="0" marginwidth="0" style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 5px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px;  "></iframe>-->
+
 
                 </div>
             </div>
@@ -629,7 +632,7 @@
         <div class="copyright-section">
             <div class="container">
                 <div class="col-md-12">
-                    <div class="copytext text-center">&copy; DocGen2. All rights reserved | Design By: <a href="https://uicookies.com">uiCookies</a></div>
+                    <div class="copytext text-center">&copy; WMCSSYMP. All rights reserved | Design By: <a href="https://uicookies.com">uiCookies</a></div>
                 </div>
             </div>
             <!-- .container -->

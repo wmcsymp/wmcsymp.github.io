@@ -33,6 +33,7 @@ Author: uiCookies.com
 
 # Body  (text): #888
 # Heading Color #0E1555
+# W&M Text and Heading Color: #183028
 # Theme Color (link color) #FD367E
 # Mid grey (sub header) #666666
 # -------------------------------------------------------------------*/
@@ -53,7 +54,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin : 0 0 15px;
-    color  : #0e1555;
+    /*color  : #0e1555;*/
+    color: #115740;
     }
 
 h1 {
@@ -125,7 +127,7 @@ p.lead {
     font-size   : 19px;
     line-height : 1.7em;
     }
-	
+
 ul {
     margin     : 0;
     padding    : 0;
@@ -274,14 +276,15 @@ button:focus,
     }
 
 .main-menu .nav li a {
-    color       : #ffffff;
-    font-weight : 500;
+    color       : white;
+    font-weight : 600;
     padding     : 15px 0 15px 30px;
     }
 
 .main-menu .nav li a:hover,
 .main-menu .nav li.active a {
-    color      : #fd367e;
+    /*color      : #fd367e;*/
+    /*color      : #115740;*/
     background : transparent;
     }
 
@@ -302,7 +305,8 @@ button:focus,
 
     .main-menu .nav li a {
         padding : 5px 0;
-        color: #0e1555;
+        /*color: #0e1555;*/
+        color: #115740;
         }
 
     .navbar-collapse {
@@ -328,7 +332,8 @@ button:focus,
     }
 
 .sticky-nav .nav li a {
-    color : #0e1555;
+    /*color : #0e1555;*/
+    color : #115740;
     }
 
 .sticky-nav .navbar-toggle .icon-bar{
@@ -347,7 +352,7 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/img-jumbotron-bg.jpg");
+    background            : url("../img/wm-background.jpeg");
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -364,10 +369,10 @@ button:focus,
 .jumbotron .content {
     color             : #ffffff;
     position          : absolute;
-    top               : 50%;
+    top               : 40%;
     left              : 0;
     right             : 0;
-    height            : 30%;
+    height            : 0%;
     width             : 100%;
     margin            : 0 auto;
     padding           : 0 10%;
@@ -375,7 +380,7 @@ button:focus,
     -webkit-transform : translateY(-50%);
     -moz-transform    : translateY(-50%);
     font-weight : normal;
-	text-shadow: 5px 5px 1px #333;
+    /*text-shadow: 1px 1px 2px #fff;*/
     }
 
 .jumbotron .content h1 {
@@ -393,7 +398,7 @@ button:focus,
 .jumbotron .content .event-date {
     font-size     : 24px;
     margin-bottom : 40px;
-	text-shadow: 2px 2px 0px #333;
+	  /*text-shadow: 2px 2px 0px #333;*/
     }
 
 .jumbotron .btn {
@@ -551,7 +556,7 @@ button:focus,
     display     : block;
     line-height : 1;
     }
-	
+
 .section-ajenda .session h4 {
 margin         : 5px 0 5px 20px;
 font-size      : 16px;
@@ -630,7 +635,7 @@ font-size      : 16px;
     }
 
 /* --------------------------
- * Client Logo 
+ * Client Logo
  *---------------------------*/
 
 .client-logo a img {
@@ -769,9 +774,9 @@ font-size      : 16px;
 /* ---------------------------------------------- */
 
 .floating-dates{
-	z-index: 10;  
-	position: fixed;  
-	right: 0;  
+	z-index: 10;
+	position: fixed;
+	right: 0;
 	top: 20%;
 	left: 82%;
 	background: rgba(255, 255, 255, .6);
@@ -784,7 +789,7 @@ font-size      : 16px;
 }
 
 section div p.lead{
-	
+
 	text-align: justify;
 }
 
