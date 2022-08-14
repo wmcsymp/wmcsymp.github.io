@@ -36,6 +36,8 @@ Author: uiCookies.com
 # W&M Text and Heading Color: #183028
 # Theme Color (link color) #FD367E
 # Mid grey (sub header) #666666
+# wm gold color #F0B323
+# wm silver color #D0D3D4
 # -------------------------------------------------------------------*/
 
 body {
@@ -224,7 +226,13 @@ button:focus,
     padding : 0;
     height  : auto;
     margin  : 5px 0 !important;
-    }
+
+}
+
+.navbar-brand>img{
+    /* background-color: red; */
+    margin-top: -15px;
+}
 
 @media (max-width : 768px) {
     .navbar-brand {
@@ -259,6 +267,7 @@ button:focus,
     margin        : 5px 0;
     padding       : 11px 10px;
     background    : transparent;
+    color: #666666;
     }
 
 .navbar-toggle:hover {
@@ -266,7 +275,8 @@ button:focus,
     }
 
 .navbar-toggle .icon-bar {
-    background: #fff;
+    /* background: #fff; */
+    background: #F0B323;
     }
 
 /*Navigation Style*/
@@ -276,7 +286,7 @@ button:focus,
     }
 
 .main-menu .nav li a {
-    color       : white;
+    color: #115740;
     font-weight : 600;
     padding     : 15px 0 15px 30px;
     }
@@ -352,7 +362,7 @@ button:focus,
  *-------------------*/
 
 .jumbotron {
-    background            : url("../img/wm-background.jpeg");
+    /* background            : url("../img/wm-background.jpeg"); */
     background-size       : cover;
     padding               : 0;
     margin                : 0;
@@ -364,10 +374,11 @@ button:focus,
     background-repeat     : no-repeat;
     background-position   : center center;
     overflow              : hidden;
+    background-color: white;
     }
 
 .jumbotron .content {
-    color             : #ffffff;
+    color             : #115740;
     position          : absolute;
     top               : 40%;
     left              : 0;
@@ -380,12 +391,14 @@ button:focus,
     -webkit-transform : translateY(-50%);
     -moz-transform    : translateY(-50%);
     font-weight : normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
     /*text-shadow: 1px 1px 2px #fff;*/
     }
 
 .jumbotron .content h1 {
-    color       : white;
+    color       : #115740;
     font-weight : bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
 .jumbotron .content p.lead {
@@ -396,8 +409,10 @@ button:focus,
     }
 
 .jumbotron .content .event-date {
-    font-size     : 24px;
+    font-size     : 20px;
     margin-bottom : 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 	  /*text-shadow: 2px 2px 0px #333;*/
     }
 
