@@ -231,7 +231,7 @@ button:focus,
 
 .navbar-brand>img{
     /* background-color: red; */
-    margin-top: -15px;
+    margin-top: -40px;
 }
 
 @media (max-width : 768px) {
@@ -242,6 +242,7 @@ button:focus,
     .navbar-brand img {
         max-width : 100%;
         height    : auto;
+        margin-top: auto;
         }
     }
 
@@ -267,11 +268,11 @@ button:focus,
     margin        : 5px 0;
     padding       : 11px 10px;
     background    : transparent;
-    color: #666666;
+    color: #F0B323;
     }
 
 .navbar-toggle:hover {
-    color: #fff;
+    color: #F0B323;
     }
 
 .navbar-toggle .icon-bar {
