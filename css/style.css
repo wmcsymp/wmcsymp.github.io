@@ -377,7 +377,7 @@ button:focus,
     background-repeat     : no-repeat;
     background-position   : center center;
     overflow              : hidden;
-    /* background-color: white; */
+    background-color: #F2F4F4;
     }
 
 .jumbotron .content {
