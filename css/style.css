@@ -402,7 +402,7 @@ button:focus,
     color       : #115740;
     font-weight : bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: xxx-large;
+    font-size: 5em;
     }
 
 .jumbotron .content p.lead {
