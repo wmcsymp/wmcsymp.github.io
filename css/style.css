@@ -232,7 +232,7 @@ button:focus,
 .navbar-brand>img{
     /* background-color: red; */
     margin-top: -10px;
-    max-width: 70%;
+    max-width: 400px;
 }
 
 
