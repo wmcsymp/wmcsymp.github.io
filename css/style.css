@@ -830,3 +830,7 @@ section div p.lead{
 a:visited{
   color:#fd367e;
 }
+
+.nopad{
+    padding: 0;
+}
