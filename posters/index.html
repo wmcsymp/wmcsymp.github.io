@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster Voting Confirmation</title>
+  </head>
+  <body>
+    <div id="content">
+      <h1>Poster Voting</h1>
+      <p id="message">Loading poster details...</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+      // Get the poster index from the URL query parameter
+      const urlParams = new URLSearchParams(window.location.search);
+      const index = urlParams.get("index");
+
+      // CSV file path (update with the correct path to your CSV file)
+      const csvFilePath = "/posters/posters.csv";
+
+      // Function to load and parse the CSV file
+      function loadCSV() {
+        Papa.parse(csvFilePath, {
+          download: true,
+          header: true,
+          complete: function (results) {
+            displayPosterInfo(results.data);
+          },
+        });
+      }
+
+      // Function to display the poster details
+      function displayPosterInfo(data) {
+        const poster = data.find((item) => item.Index === index);
+
+        if (poster) {
+          document.getElementById("message").innerHTML = `
+                    Your vote for Poster ${poster.Index} has been recorded!<br><br>
+                    <strong>Title:</strong> ${poster.Title}<br>
+                    <strong>Authors:</strong> ${poster.Authors}
+                `;
+        } else {
+          document.getElementById("message").innerText = "Poster not found.";
+        }
+      }
+
+      // Load the CSV file on page load
+      loadCSV();
+    </script>
+  </body>
+</html>
