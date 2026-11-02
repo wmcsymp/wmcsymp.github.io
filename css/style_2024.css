@@ -835,3 +835,10 @@ a:visited {
 .nopad {
   padding: 0;
 }
+
+/* 2026 schedule table */
+.section-agenda table.schedule { margin-top: 10px; background: #fff; }
+.section-agenda table.schedule td { padding: 14px 18px; vertical-align: top; font-size: 19px; font-weight: 400; color: #111; border-top: 1px solid #e5e5e5; }
+.section-agenda table.schedule td.time { white-space: nowrap; width: 230px; font-weight: 700; color: #115740; }
+.section-agenda table.schedule .who { display: block; font-size: 16px; font-weight: 400; color: #333; margin-top: 2px; }
+.section-agenda p.lead { color: #111; font-size: 22px; }
